@@ -1,9 +1,10 @@
 import React from 'react'
+import Posts from './Show'
 
 function LandingPage() {
     return (
-        <div>
-            
+        <div className='bg-black text-white'>
+            <Posts />
         </div>
     )
 }

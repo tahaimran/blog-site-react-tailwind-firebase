@@ -1,4 +1,3 @@
-import './App.css';
 import Posts from './Components/Show';
 import Write from './Components/Write';
 import LandingPage from './Components/LandingPage';
