@@ -1,11 +1,15 @@
 import React from 'react'
-import Posts from './Show'
+import Nav from './Nav'
+import Main from './Main'
+import Posts from './Posts'
 
 function LandingPage() {
     return (
-        <div className='bg-black text-white'>
+        <>
+            <Nav />
+            <Main />
             <Posts />
-        </div>
+        </>
     )
 }
 

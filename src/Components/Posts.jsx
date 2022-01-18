@@ -7,17 +7,20 @@ function Posts() {
     useEffect(() => {
         const getPost = async () => {
             const data = await getDocs(postCollectionRef);
-            setPost(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+            setPost(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+            console.log(data)
         }
         getPost();
     }, [])
     return (
-        <div>
+        <div className='  grid  grid-cols-3 gap-5 m-5 text-center'>
             {posts.map((post) => {
                 return(
                      <div> 
+                         <span>{post.dates}</span>
                          <h2>{post.title}</h2>
                           <p>{post.paras}</p>
+
                     </div>
                 )
             })}

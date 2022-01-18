@@ -1,4 +1,4 @@
-import Posts from './Components/Show';
+import Posts from './Components/Posts';
 import Write from './Components/Write';
 import LandingPage from './Components/LandingPage';
 
