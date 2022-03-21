@@ -11,11 +11,9 @@ function Nav() {
             </div>
 
             <ul className='flex mt-4 text-[#454753] font-bold'>
-                <li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>Home</li>
-                <li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>Blog</li>
-                <li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>BookMarks</li>
-                <li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>Playlists</li>
-                <li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>Books</li>
+              <Link to='/'><li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>Home</li></Link>  
+              <Link to='/'><li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>Blog</li></Link>  
+                <li className='mx-4 cursor-pointer hover:text-pink-400 hover:underline'>About Us</li>
             </ul>
         </div>
     )

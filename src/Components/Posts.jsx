@@ -10,12 +10,13 @@ function Posts() {
         <div className='my-20'>
             <h2 className='text-5xl font-semibold my-6  text-center'>Blogs</h2>
             <div className='flex flex-col sm:flex-row sm:justify-center  '>
-                {posts.map((post, i) => {
+                {posts.filter(e => e.status !== "disable").map((post, i) => {
                     return (
-                        <div key={i} className='flex flex-col items-center  done m-4 overflow-hidden'>
+                        <div key={i} className='flex flex-col items-center  done m-4 overflow-hidden '>
                             <img className=' ' src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="" />
                             <div className='flex flex-col items-start w-[95%]'>
-                                <h2 className='text-2xl font-semibold py-2 text-[#131215] font'>{post.title}</h2>
+                            <span className='text-[#454753] font-semibold mt-2'>{post.dates}</span>
+                                <h2 className='text-2xl font-semibold py-2 text-[#131215] '>{post.title}</h2>
                                 {/* <p className='text-[#454753] text-base'>{post.paras}</p> */}
                             </div>
                             <Link to={`/posts/${post.id}`}>
